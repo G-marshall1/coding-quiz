@@ -1,0 +1,65 @@
+body {
+    display: revert;
+}
+
+/* move timer to the end of the page */
+.timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}
+  
+
+/* move time-counter to the end of the page */
+.time-counter {
+    position: absolute;
+    top: 3;
+    right: 0;
+    margin: 1rem;
+}
+
+/* move hide and start-button to the center of the page */
+.hide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+}
+
+/* move answers to the center of the page */
+.answers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+}
+
+.end-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+}
+
+.highscore-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+}
+
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    color: blue;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+}

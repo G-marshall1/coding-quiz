@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $(".answers").hide();
+            $(".end-page").hide();
+            $(".highscore-page").hide();
         })
     </script>
 </head>
@@ -19,31 +23,53 @@
 <body>
     <!-- add a header with "View high score" -->
     <header>
-<a href="">view high score</a>
+        <button class="viewHighScore"> View High Score</button>
 
-<div class="timer">time remaining</div>
-<div class="time-counter">100</div>
+        <div class="timer">time remaining</div>
+        <div class="time-counter">100</div>
 
     </header>
     <!-- adding main section that changes -->
     <main>
-<!-- add container to transition to -->
-<div class="hide">
-    <h1>CODING QUIZ!</h1>
-    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas sint placeat ad molestias in, nesciunt aspernatur id! Minus exercitationem sequi temporibus impedit? Vitae distinctio libero maxime vero dolor fugiat.  </h5>
-    <button class="start-button">Start quiz</button>
-</div>
+        <!-- add container to transition to -->
+        <div class="hide">
+            <h1>CODING QUIZ!</h1>
+            <h5>Lets see what you know! Missing a question will result in a 10 second reduction. HAVE FUN!. </h5>
+            <button class="start-button">Start quiz</button>
+        </div>
 
-<div class="answers">
-    <h2 class="question"></h2>
-    <div class="options"></div>
-    <!-- <button class="answer0"></button>
-    <button class="answer1"></button>
-    <button class="answer2"></button>
-    <button class="answer3"></button> -->
-</div>
+        <div class="answers">
+            <h2 class="question"></h2>
+            <div class="options"></div>
+            <h4 class="result"></h4>
+        </div>
+
+        <!-- This is the ending page that displays the score and allows them to submit their score to the database -->
+        <div class="end-page">
+            <h1>TIME!</h1>
+            <h5>final score</h5>
+            <div>
+                <h3>enter initials</h3>
+                <input type="text" id="initials-value">
+                <button id="submit">submit</button>
+            </div>
+        </div>
+
+        <div class="highscore-page">
+            <h1 class="displayHighScore">High Score</h1>
+            <table cellpadding="0" width="50%" id='scores'> 
+                <tr>
+                    <th>Initials</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+            <br>
+            <button id="go-back">Go Back</button>
+            <button id="clear-highscore">Clear History</button>
 
 
+
+        </div>
 
 
     </main>
@@ -56,11 +82,13 @@
 
 
 
-  <!-- Added link to the jQuery library -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <!-- Added link to the jQuery library -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 
 
-  <script type="text/javascript" src="./script.js"></script>
+
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
