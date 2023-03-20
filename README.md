@@ -17,14 +17,18 @@
 
 ## Installation
 
-No installation needed since it is a landing page that can be viewed here 
+No installation needed since it is a landing page that can be viewed here https://g-marshall1.github.io/coding-quiz/
 
 ## Usage
 -User can start the quiz by clicking "Start button"
 -User can read the questions and choose an answer that is multiple choice.
 -User will lose points for getting questions wrong
 -User will be able to log their name on a score board and view local history of the score board or clear it.
-https://user-images.githubusercontent.com/122425742/226253701-408ef852-0dfa-48f6-8e9c-6514a945fe62.mp4
+
+
+https://user-images.githubusercontent.com/122425742/226254736-f5a17896-3675-48a8-b952-ba0448030038.mp4
+
+
 
 
 
